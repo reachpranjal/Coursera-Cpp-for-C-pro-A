@@ -25,7 +25,7 @@ int main() {
 
 template <class T_summable>
 T_summable sum(const T_summable data[], int size, T_summable s = 0) // 'const' (not available in C) makes data[] immutable
-																	// s=0 is default initial value, however, we can over-write
+								    // s=0 is default initial value, however, we can over-write
 {
 	for (int i = 0; i < size; ++i)
 		s += data[i];
