@@ -3,8 +3,8 @@
 using namespace std;
 
 //double sum(double data[], int size)   // data[] & *data - both are correct  
-										// since arrays are base pointers
-/*double sum(double *data, int size)
+				        // since arrays are base pointers
+double sum(double *data, int size)
 {
 	double s = 0.0;
 	int i;
@@ -19,11 +19,11 @@ using namespace std;
 int main() {
 	double data_arr[] = {4, 3};
 	sum(data_arr, 2);
-}*/
+}
 
 // ***** C++ Generic SUM an array *****
 
-/*template <class T_summable>
+template <class T_summable>
 T_summable sum(const T_summable data[], int size, T_summable s = 0) // 'const' (not available in C) makes data[] immutable
 																	// s=0 is default initial value, however, we can over-write
 {
@@ -42,12 +42,12 @@ int main() {
 
 	return 0;
 	
-} */ 
+} 
 
 // ***** EXERCISE - 1 *****
 // Write a program (abbrv. WAP) for subtraction
 
-/*template <class T_sub>
+template <class T_sub>
 T_sub sub(const T_sub data[], int size, T_sub s = 0) 
 {
 	for (int i = 0; i < size; i++)
@@ -62,12 +62,12 @@ int main() {
 	cout << sub(a, 2, 5) << endl; 
 
 	return 0;
-}*/
+}
 
 // ***** EXERCISE - 2 *****
 // WAP that output the elements of the array
 
-/*template <class T_ele>
+template <class T_ele>
 T_ele dispArr(const T_ele data[], int size, T_ele s = 0)
 {
 	for (int i = size - 1; i >= 0; i--) {    // Reversed the loop for just a flavour
@@ -83,5 +83,5 @@ int main() {
 	int a[] = {5, 4, 3, 2, 1};
 	dispArr(a, 5);
 	return 0;
-}*/
+}
 
